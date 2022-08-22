@@ -24,7 +24,7 @@ export class ForPetsService {
     return this.http.get<ForPets[]>(`${this.apiServerUrl}/for-pets/${animalSpecie}`);
   }
 
-  public getAnimalsByWeightRange(MinWeight: number, MaxWeight: number): Observable<ForPets[]> {
+  public getAnimalsByWeightRange(MinWeight: string, MaxWeight: string): Observable<ForPets[]> {
     return this.http.get<ForPets[]>(`${this.apiServerUrl}/for-pets/weightRange?start=${MinWeight}&end=${MaxWeight}`);
   }
 

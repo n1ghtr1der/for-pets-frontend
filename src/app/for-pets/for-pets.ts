@@ -3,9 +3,9 @@ export interface ForPets {
     name: string;
     breed: string;
     type: string;
-    weight: number;
+    weight: string;
     imageURL: string;
-    dateOfBirth: string;
+    dateOfBirth: Date;
     vaccinated: boolean;
     gender: string;
     specie: string;
