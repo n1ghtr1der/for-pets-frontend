@@ -3,7 +3,7 @@ export interface ForPets {
     name: string;
     breed: string;
     type: string;
-    weight: string;
+    weight: number;
     imageURL: string;
     dateOfBirth: Date;
     vaccinated: boolean;

@@ -12,15 +12,22 @@
 }
 
 .cards-container {
-    width: 1300px;
+    width: 100%;
     background-color: #eeeeee;
     padding: 0 40px;
+    min-height: 500px;
     
 }
 
 .card-child {
     max-width: 299.7px;
     min-width: 299.7px;
+}
+
+.dds__card-img-top {
+    object-fit: cover;
+    height: 267.69px;
+    width: 267.69px;
 }
 
 .dds__card-body {

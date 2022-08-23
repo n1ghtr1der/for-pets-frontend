@@ -29,7 +29,7 @@ export class ForPetsService {
   }
 
   public addAnimal(animal: ForPets): Observable<ForPets> {
-    return this.http.post<ForPets>(`${this.apiServerUrl}/for-pets/create`, animal);
+    return this.http.post<ForPets>(`${this.apiServerUrl}/for-pets/add`, animal);
   }
 
   public deleteAnimal(animalId: string): any {
