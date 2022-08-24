@@ -1,0 +1,21 @@
+html {
+    font-size: 100%;
+}
+
+.accessibility-bar-container {
+    background-color: #41b6e6;
+    height: 60px;
+    width: 100%;
+}
+
+.accessibility-bar-container div {
+    margin: 10px 0 10px 0;
+}
+
+#increase-size, #default-size {
+    margin-right: 20px;
+}
+
+#decrease-size {
+    margin-right: 50px;
+}
