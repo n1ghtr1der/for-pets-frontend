@@ -1,0 +1,33 @@
+.info-container {
+    margin-left: 13%;
+    margin-right: 13%;
+    
+}
+
+.info-child {
+    background-color: #eeeeee;
+    width: 710px;
+    height: 498px;
+}
+
+.content-container {
+    margin: auto;
+    width: 100%;
+}
+
+.content-child {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+img[src] {
+    display: flex;
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border: 0px;
+}
+
+img {
+    display: none;
+}
