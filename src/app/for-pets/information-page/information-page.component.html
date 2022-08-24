@@ -22,10 +22,13 @@
                     <li class="dds__list-group-item-unordered">- Type: {{ animal.type }}</li>
                     <li class="dds__list-group-item-unordered">- Name: {{ animal.name }}</li>
                     <li class="dds__list-group-item-unordered">- Breed: {{ animal.breed }}</li>
-                    <li class="dds__list-group-item-unordered">- Weigh: {{ animal.weight }} kg</li>
+                    <li class="dds__list-group-item-unordered">- Weight: {{ animal.weight }} kg</li>
                     <li class="dds__list-group-item-unordered">- Date Of Birth: {{ animal.dateOfBirth }}</li>
-                    <li class="dds__list-group-item-unordered">- Vaccinated: {{ animal.vaccinated }}</li>
+                    <li *ngIf="animal.vaccinated;else vaxxFalse" class="dds__list-group-item-unordered">- Vaccinated: Yes</li>
                     <li class="dds__list-group-item-unordered">- Gender: {{ animal.gender }}</li>
+                    <ng-template #vaxxFalse>
+                        <li class="dds__list-group-item-unordered">- Vaccinated: No</li>
+                    </ng-template>
                 </ul>
             </div>
         </div>
