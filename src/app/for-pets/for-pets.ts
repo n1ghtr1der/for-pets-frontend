@@ -1,5 +1,5 @@
 export interface ForPets {
-    id: number;
+    id: string;
     name: string;
     breed: string;
     type: string;

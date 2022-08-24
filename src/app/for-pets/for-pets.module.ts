@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { FormsModule } from '@angular/forms';
+import { InformationPageComponent } from './information-page/information-page.component';
 
 
 
@@ -12,7 +13,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     HeaderComponent,
     HomeComponent,
-    RegistrationPageComponent
+    RegistrationPageComponent,
+    InformationPageComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { FormsModule } from '@angular/forms';
   exports: [
     HeaderComponent,
     HomeComponent,
-    RegistrationPageComponent
+    RegistrationPageComponent,
+    InformationPageComponent
   ]
 })
 export class ForPetsModule { }

@@ -1,0 +1,33 @@
+<div class="info-container dds__mt-5">
+    <h2 class="dds__h2">Animal Info</h2>
+    <div class="search-container dds__mb-3">
+        <div class="dds__form-group dds__w-25"> <label for="name-3">Animal ID</label> <input type="text"
+                class="dds__form-control" placeholder="ex: 1" maxlength="3" id="animalId" name="animalId" #animalId>
+        </div>
+        <div class="action-btn">
+            <button role="button" type="submit" class="dds__btn dds__btn-primary dds__text-truncate"
+                (click)="showAnimalById(animalId.value)">Search</button>
+            <button role="button" type="button" class="dds__btn dds__btn-secondary dds__text-truncate dds__ml-3"
+                routerLink="/home">Cancel</button>
+        </div>
+    </div>
+    <div class="info-child dds__py-4 dds__d-inline-flex dds__justify-content-start">
+        <div class="content-container dds__d-inline-flex dds__justify-content-start dds__flex-row dds__flex-nowrap dds__ml-4">
+            <div class="content-child">
+                <img src="{{ animal.imageURL }}" alt="animal image">
+            </div>
+            <div class="content-child">
+                <h5 class="dds__h5"><strong>SPECIE: {{ animal.specie }}</strong></h5>
+                <ul class="dds__list-group dds__list-group-unstyled">
+                    <li class="dds__list-group-item-unordered">- Type: {{ animal.type }}</li>
+                    <li class="dds__list-group-item-unordered">- Name: {{ animal.name }}</li>
+                    <li class="dds__list-group-item-unordered">- Breed: {{ animal.breed }}</li>
+                    <li class="dds__list-group-item-unordered">- Weigh: {{ animal.weight }} kg</li>
+                    <li class="dds__list-group-item-unordered">- Date Of Birth: {{ animal.dateOfBirth }}</li>
+                    <li class="dds__list-group-item-unordered">- Vaccinated: {{ animal.vaccinated }}</li>
+                    <li class="dds__list-group-item-unordered">- Gender: {{ animal.gender }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

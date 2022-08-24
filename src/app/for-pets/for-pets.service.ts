@@ -33,7 +33,7 @@ export class ForPetsService {
   }
 
   public deleteAnimal(animalId: string): any {
-    return this.http.delete(`${this.apiServerUrl}/for-pets/delete/${animalId}`);
+    return this.http.delete(`${this.apiServerUrl}/for-pets/delete/${animalId}`, {responseType: 'text'});
   }
 
   public editAnimal(animalId: string, animal: ForPets): Observable<ForPets> {
