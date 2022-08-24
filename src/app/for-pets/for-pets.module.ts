@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { FormsModule } from '@angular/forms';
 import { InformationPageComponent } from './information-page/information-page.component';
+import { AccessibilityBarComponent } from './accessibility-bar/accessibility-bar.component';
 
 
 
@@ -14,7 +15,8 @@ import { InformationPageComponent } from './information-page/information-page.co
     HeaderComponent,
     HomeComponent,
     RegistrationPageComponent,
-    InformationPageComponent
+    InformationPageComponent,
+    AccessibilityBarComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { InformationPageComponent } from './information-page/information-page.co
     HeaderComponent,
     HomeComponent,
     RegistrationPageComponent,
-    InformationPageComponent
+    InformationPageComponent,
+    AccessibilityBarComponent
   ]
 })
 export class ForPetsModule { }
