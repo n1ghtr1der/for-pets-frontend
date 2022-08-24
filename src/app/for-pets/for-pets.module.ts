@@ -7,6 +7,7 @@ import { RegistrationPageComponent } from './registration-page/registration-page
 import { FormsModule } from '@angular/forms';
 import { InformationPageComponent } from './information-page/information-page.component';
 import { AccessibilityBarComponent } from './accessibility-bar/accessibility-bar.component';
+import { EditPageComponent } from './edit-page/edit-page.component';
 
 
 
@@ -16,7 +17,8 @@ import { AccessibilityBarComponent } from './accessibility-bar/accessibility-bar
     HomeComponent,
     RegistrationPageComponent,
     InformationPageComponent,
-    AccessibilityBarComponent
+    AccessibilityBarComponent,
+    EditPageComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { AccessibilityBarComponent } from './accessibility-bar/accessibility-bar
     HomeComponent,
     RegistrationPageComponent,
     InformationPageComponent,
-    AccessibilityBarComponent
+    AccessibilityBarComponent,
+    EditPageComponent
   ]
 })
 export class ForPetsModule { }

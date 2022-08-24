@@ -1,0 +1,88 @@
+<div class="form-container dds__mt-5">
+    <h2 class="dds__h2">Edit Animal</h2>
+    <div class="form-child dds__py-5">
+        <form #editForm="ngForm" (ngSubmit)="editAnimal(id.value, editForm)" class="formInput">
+            <div class="inputEdit dds__form-group dds__px-4">
+                <label>Animal ID</label>
+                <input #id type="text" class="dds__form-control" placeholder="ex: 1" ngModel name="id" />
+            </div>
+            <div class="inputEdit dds__form-group dds__px-4"> <label for="exampleFormControlSelect3">Specie</label> <select
+                class="dds__form-control" id="exampleFormControlSelect3" ngModel name="specie">
+                <option value='MAMMAL'>Mammal</option>
+                <option value='BIRD'>Bird</option>
+                <option value='FISH'>Fish</option>
+                <option value='REPTILE'>Reptile</option>
+            </select> </div>
+            <div class="inputEdit dds__px-4">
+                <div class="dds__form-group">
+                    <label>Name(leave it blank if name is unknown)</label>
+                    <input type="text" class="dds__form-control" placeholder="ex: Dino" ngModel name="name" />
+                </div>
+            </div>
+            <div class="inputEdit dds__px-4">
+                <div class="dds__form-group">
+                    <label>Type</label>
+                    <input type="text" class="dds__form-control" placeholder="ex: Dog" ngModel name="type" />
+                </div>
+            </div>
+            <div class="inputEdit dds__px-4">
+                <div class="dds__form-group">
+                    <label>Breed(leave it blank if breed is unknown)</label>
+                    <input type="text" class="dds__form-control" placeholder="ex: Chihuahua" ngModel name="breed" />
+                </div>
+            </div>
+            <div class="inputEdit dds__px-4">
+                <div class="dds__form-group">
+                    <label>Weight</label>
+                    <input type="text" class="dds__form-control" placeholder="ex: 4.5" ngModel name="weight" />
+                </div>
+            </div>
+            <div class="inputEdit dds__px-4">
+                <div class="dds__form-group">
+                    <label>Image URL</label>
+                    <input type="text" class="dds__form-control" placeholder="ex: https://i.imgur.com/Ns9qEjd.jpeg" ngModel name="imageURL" />
+                </div>
+            </div>
+            <div class="inputEdit dds__px-4">
+                <div class="dds__form-group">
+                    <label>Date of Birth(leave it blank if DoB is unknown)</label>
+                    <input type="date" class="dds__form-control" maxlength="50" ngModel name="dateOfBirth" />
+                </div>
+            </div>
+            <div class="inputEdit dds__px-4 dds__d-inline-flex">
+                <fieldset class="dds__pr-4">
+                    <legend class="dds__mb-1">Vaccinated</legend>
+                    <div class="dds__form-check dds__form-check-inline"> <label class="dds__form-check-label"
+                            for="exampleRadios1">
+                            <input class="dds__form-check-input" type="radio" name="vaccinated" value="true" ngModel name="vaccinated">
+                            <span>Yes</span> </label>
+                    </div>
+                    <div class="dds__form-check dds__form-check-inline"> <label class="dds__form-check-label"
+                            for="exampleRadios2">
+                            <input class="dds__form-check-input" type="radio" name="vaccinated" value="false" ngModel name="vaccinated">
+                            <span>No</span> </label>
+                    </div>
+                </fieldset>
+                <fieldset class="dds__px-4">
+                    <legend class="dds__mb-1">Gender</legend>
+                    <div class="dds__form-check dds__form-check-inline"> <label class="dds__form-check-label"
+                            for="exampleRadios1">
+                            <input class="dds__form-check-input" type="radio" value='MALE' ngModel name="gender">
+                            <span>Male</span> </label>
+                    </div>
+                    <div class="dds__form-check dds__form-check-inline"> <label class="dds__form-check-label"
+                            for="exampleRadios2">
+                            <input class="dds__form-check-input" type="radio" value='FEMALE' ngModel name="gender">
+                            <span>Female</span> </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="action-btn dds__px-4 dds__mr-4">
+                <button role="button" type="submit" class="dds__btn dds__btn-primary dds__text-truncate">Submit</button>
+                <button role="button" type="button" class="dds__btn dds__btn-secondary dds__text-truncate dds__ml-3"
+                    routerLink="/home">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+</div>

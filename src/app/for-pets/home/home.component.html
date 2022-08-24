@@ -1,9 +1,11 @@
 <div class="home-container dds__d-flex">
     <div class="filter-container dds__mt-5 dds__w-25">
-        <button type="button" class="dds__btn dds__btn-primary dds__btn-block dds__text-truncate"
+        <button type="button" class="dds__btn dds__btn-purchase dds__btn-block dds__text-truncate"
             routerLink="/registration">Register Animal</button>
         <button type="button" class="dds__btn dds__btn-primary dds__btn-block dds__text-truncate"
             routerLink="/search">Search Animal</button>
+            <button type="button" class="dds__btn dds__btn-primary dds__btn-block dds__text-truncate"
+            routerLink="/edit">Edit Animal</button>
         <h5 class="dds__ml-3 dds__mt-3 dds__h5">Species</h5>
         <ul class="dds__list-group dds__list-group-unstyled dds__ml-5">
             <li class="dds__list-group-item-unordered"><button class="dds__btn-link dds__text-truncate"
@@ -36,12 +38,12 @@
                     class="dds__form-control" placeholder="ex: 1" maxlength="10" name="animalId" id="animalId"
                     #animalId>
             </div>
-            <button role="button" type="button" id="deleteBtn" class="dds__btn dds__btn-primary dds__text-truncate dds__ml-4"
+            <button role="button" type="button" id="deleteBtn" class="dds__btn dds__btn-primary dds__text-truncate dds__ml-4 dds__mb-5"
                 (click)="deleteAnimal(animalId.value)">Delete</button>
         </div>
     </div>
-    <div class="cards-container dds__mt-5 dds__mb-4 ds__d-inline-flex dds__flex-wrap">
-        <div class="card-child dds__d-inline-flex dds__flex-wrap dds__col-sm-12 dds__col-md-6 dds__col-lg-6 dds__col-xl-3 dds__mt-4"
+    <div class="cards-container dds__mt-5 dds__mb-5">
+        <div class="card-child dds__d-inline-flex dds__flex-wrap dds__col-sm-12 dds__col-md-6 dds__col-lg-6 dds__col-xl-3 dds__my-4"
             *ngFor="let item of animals">
             <div class="dds__card-horizontal-bleed"> <img class="dds__card-img-top dds__img-fluid"
                     src="{{ item.imageURL }}" alt="Animal image">
