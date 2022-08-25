@@ -1,27 +1,39 @@
-# ForPetsFrontend
+<p align="center">
+  <img src="https://i.imgur.com/RrcS0pF.png"/>
+  <br><br>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+<h1 align="center">For Pets</h1> 
+<div align="center">
+<br><br>
 
-## Development server
+💻 **Acesse o back-end [aqui](https://github.com/n1ghtr1der/for-pets-backend)**
+</div>
+<br><br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## 📑 Índice
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Licença](#-licença)
+<br><br>
+## 💡 Sobre o Projeto
 
-## Build
+For Pets é um aplicação de controle de animais que permite cadastro, edição, remoção e filtragem da exibição dos animais cadastrados no sistema.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Esse projeto foi realizado durante o programa de mentoria de desenvolvimento fullstack da [Dell Lead](https://leadfortaleza.com.br/portal).
+<br>
 
-## Running unit tests
+## 🚀 Tecnologias utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Running end-to-end tests
+- Angular
+- Typescript
+- HTML5 e CSS3
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<br>
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📕 Licença
+Criado por [Emirton Sousa](https://www.linkedin.com/in/emirton-sousa/)
