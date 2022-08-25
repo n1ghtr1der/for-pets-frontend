@@ -36,4 +36,5 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 <br>
 
 ## 📕 Licença
+Todos os arquivos incluídos aqui, incluindo este _README_, estão sob [Licença MIT](./LICENSE).<br>
 Criado por [Emirton Sousa](https://www.linkedin.com/in/emirton-sousa/)
